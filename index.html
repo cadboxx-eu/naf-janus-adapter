@@ -12,6 +12,37 @@
         adapter: janus;
         serverURL: ws://localhost:8080;
       ">
+     <a-entity id="buggie" position="1 5 0" rotation="" scale="" static-body="sphereRadius: NaN" click-impulse="" velocity="" visible="">
+			<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2FChassis%20Buggy.glb?v=1609265012904" position="0 10 0" rotation="" scale="0.2 0.2 0.2" static-body="sphereRadius: NaN" click-impulse="" velocity="">
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Ftyre.glb?v=1631516766224" position="-50 -20 -150" rotation="0 315 0" scale="10 10 10" static-body="sphereRadius: NaN" click-impulse="" velocity=""	  animation__rotation="property: rotation; dir: forwards; dur: 2000;
+						repeat: indefinite; easing: linear; loop: true; to: 0 315 360"
+					  ></a-entity>
+				
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Ftyre.glb?v=1631516766224" position="-300 -20 -150" rotation="" scale="10 10 10" static-body="sphereRadius: NaN" click-impulse="" velocity=""></a-entity>
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Ftyre.glb?v=1631516766224" position="-50 -20 150" rotation="0 315 0" scale="10 10 10" static-body="sphereRadius: NaN" click-impulse="" velocity=""	  animation__rotation="property: rotation; dir: forwards; dur: 2000;
+						repeat: indefinite; easing: linear; loop: true; to: 0 315 360"
+					  ></a-entity>
+				
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Ftyre.glb?v=1631516766224" position="-300 -20 150" rotation="" scale="10 10 10" static-body="sphereRadius: NaN" click-impulse="" velocity=""></a-entity>
+		
+			</a-entity>
+			<a-entity id="#jetseats" position="" rotation="" scale="" static-body="sphereRadius: NaN" click-impulse="" velocity="">
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fjetengine.glb?v=1631523659516" position="0 0 -10" rotation="" scale="2 2 2" static-body="sphereRadius: NaN" click-impulse="" velocity=""></a-entity>
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fjetengine.glb?v=1631523659516" position="0 0 10" rotation="" scale="2 2 2" static-body="sphereRadius: NaN" click-impulse="" velocity=""></a-entity>
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fseat.glb?v=1631545223024" position="-30 13 0" rotation="0 270 0" scale="800 800 800" static-body="sphereRadius: NaN" click-impulse="" velocity="" id="ss"></a-entity>
+				<a-entity gltf-model="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fseat.glb?v=1631545223024" position="0 2 -0.5" rotation="" scale="" static-body="sphereRadius: NaN" click-impulse="" velocity="" visible="false"></a-entity>
+		
+			</a-entity>
+		</a-entity>
+     
+     <a-entity light="type: hemisphere; color: #33C; groundColor: #3C3; intensity: 2"></a-entity>
+
+		<a-entity>
+			<a-entity camera look-controls orbit-controls="target: 0 0 0; minDistance: 0.5; maxDistance: 7.5; initialPosition: 5 0 7.5"><a-entity cursor="fuse: false; rayOrigin: mouse;"></a-entity>
+     			
+			</a-entity>
+		</a-entity>
+     
   </a-scene>
 </body>
 </html>
